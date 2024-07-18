@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c4f47289-8a43-4b2f-9db5-68f9acaea164}</ProjectGuid>
+    <RootNamespace>TRIHook</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>E:\Dev\TRIHook\TRIHook\TRIHook;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DLL1_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;DLL1_EXPORTS;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;DLL1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;DLL1_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="argparse.h" />
+    <ClInclude Include="dllmain.h" />
+    <ClInclude Include="engine\3d\3dstructs.h" />
+    <ClInclude Include="engine\3d\C3DModel.h" />
+    <ClInclude Include="engine\3d\CMini3D.h" />
+    <ClInclude Include="engine\3d\CSimpleModel.h" />
+    <ClInclude Include="engine\3d\SMaterial.h" />
+    <ClInclude Include="engine\editortools\CEditorTools.h" />
+    <ClInclude Include="engine\editortools\CPickList.h" />
+    <ClInclude Include="engine\engine_3d.h" />
+    <ClInclude Include="engine\engine_audio.h" />
+    <ClInclude Include="engine\engine_common.h" />
+    <ClInclude Include="engine\engine_editortools.h" />
+    <ClInclude Include="engine\engine_font.h" />
+    <ClInclude Include="engine\engine_game.h" />
+    <ClInclude Include="engine\engine_gfx.h" />
+    <ClInclude Include="engine\engine_input.h" />
+    <ClInclude Include="engine\engine_math.h" />
+    <ClInclude Include="engine\engine_memory.h" />
+    <ClInclude Include="engine\engine_physics.h" />
+    <ClInclude Include="engine\engine_platform_windows.h" />
+    <ClInclude Include="engine\engine_pod.h" />
+    <ClInclude Include="engine\engine_time.h" />
+    <ClInclude Include="engine\font\CBitFont.h" />
+    <ClInclude Include="engine\font\CFont.h" />
+    <ClInclude Include="engine\game\Game.h" />
+    <ClInclude Include="engine\input\Keyboard.h" />
+    <ClInclude Include="engine\math\CVector.h" />
+    <ClInclude Include="engine\platform\windows\windproc.h" />
+    <ClInclude Include="engine\pod\CPod.h" />
+    <ClInclude Include="engine\pod\CTruckPod.h" />
+    <ClInclude Include="EVOMemoryHandler.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="framework\common.h" />
+    <ClInclude Include="framework\hook.h" />
+    <ClInclude Include="framework\HookConfig.h" />
+    <ClInclude Include="framework\hook_framework.h" />
+    <ClInclude Include="framework\output.h" />
+    <ClInclude Include="game\GameSettings.h" />
+    <ClInclude Include="handlers\CallbacksHandler.h" />
+    <ClInclude Include="handlers\EVOConfigSkipHandler.h" />
+    <ClInclude Include="handlers\EVOInputPatchHandler.h" />
+    <ClInclude Include="handlers\EVOMasterServerHandler.h" />
+    <ClInclude Include="handlers\EVOMiscPatchHandler.h" />
+    <ClInclude Include="handlers\EVOSoundHandler.h" />
+    <ClInclude Include="handlers\EVOWidescreenHandler.h" />
+    <ClInclude Include="handlers\FPSLimitHandler.h" />
+    <ClInclude Include="handlers\handlers.h" />
+    <ClInclude Include="handlers\OutputHandler.h" />
+    <ClInclude Include="handlers\PODHandler.h" />
+    <ClInclude Include="handlers\ScreenshotHandler.h" />
+    <ClInclude Include="handlers\TestHooks.h" />
+    <ClInclude Include="handlers\TimeHandler.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="thirdparty\inicpp.h" />
+    <ClInclude Include="thirdparty\libpng\png.h" />
+    <ClInclude Include="thirdparty\libpng\pngconf.h" />
+    <ClInclude Include="thirdparty\pngplusplus\color.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\config.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\consumer.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\convert_color_space.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\end_info.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\error.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\ga_pixel.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\generator.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\gray_pixel.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\image.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\image_info.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\index_pixel.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\info.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\info_base.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\io_base.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\packed_pixel.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\palette.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\pixel_buffer.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\pixel_traits.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\png.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\reader.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\require_color_space.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\rgba_pixel.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\rgb_pixel.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\solid_pixel_buffer.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\streaming_base.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\tRNS.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\types.hpp" />
+    <ClInclude Include="thirdparty\pngplusplus\writer.hpp" />
+    <ClInclude Include="thirdparty\zlib\crc32.h" />
+    <ClInclude Include="thirdparty\zlib\deflate.h" />
+    <ClInclude Include="thirdparty\zlib\gzguts.h" />
+    <ClInclude Include="thirdparty\zlib\inffast.h" />
+    <ClInclude Include="thirdparty\zlib\inffixed.h" />
+    <ClInclude Include="thirdparty\zlib\inflate.h" />
+    <ClInclude Include="thirdparty\zlib\inftrees.h" />
+    <ClInclude Include="thirdparty\zlib\trees.h" />
+    <ClInclude Include="thirdparty\zlib\zconf.h" />
+    <ClInclude Include="thirdparty\zlib\zlib.h" />
+    <ClInclude Include="thirdparty\zlib\zutil.h" />
+    <ClInclude Include="trihook\trihook.h" />
+    <ClInclude Include="trihook\trihook_defs.h" />
+    <ClInclude Include="trihook\trihook_util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="argparse.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="engine\3d\C3DModel.cpp" />
+    <ClCompile Include="engine\3d\CMini3D.cpp" />
+    <ClCompile Include="engine\3d\CSimpleModel.cpp" />
+    <ClCompile Include="engine\3d\SMaterial.cpp" />
+    <ClCompile Include="engine\editortools\CEditorTools.cpp" />
+    <ClCompile Include="engine\editortools\CPickList.cpp" />
+    <ClCompile Include="engine\engine_font.cpp" />
+    <ClCompile Include="engine\font\CBitFont.cpp" />
+    <ClCompile Include="engine\font\CFont.cpp" />
+    <ClCompile Include="engine\game\Game.cpp" />
+    <ClCompile Include="engine\input\Keyboard.cpp" />
+    <ClCompile Include="engine\math\CVector.cpp" />
+    <ClCompile Include="engine\pod\CPod.cpp" />
+    <ClCompile Include="engine\pod\CTruckPod.cpp" />
+    <ClCompile Include="EVOMemoryHandler.cpp" />
+    <ClCompile Include="framework\hook.cpp" />
+    <ClCompile Include="framework\HookConfig.cpp" />
+    <ClCompile Include="framework\output.cpp" />
+    <ClCompile Include="game\GameSettings.cpp" />
+    <ClCompile Include="handlers\CallbacksHandler.cpp" />
+    <ClCompile Include="handlers\EVOConfigSkipHandler.cpp" />
+    <ClCompile Include="handlers\EVOInputPatchHandler.cpp" />
+    <ClCompile Include="handlers\EVOMasterServerHandler.cpp" />
+    <ClCompile Include="handlers\EVOMiscPatchHandler.cpp" />
+    <ClCompile Include="handlers\EVOSoundHandler.cpp" />
+    <ClCompile Include="handlers\EVOWidescreenHandler.cpp" />
+    <ClCompile Include="handlers\FPSLimitHandler.cpp" />
+    <ClCompile Include="handlers\OutputHandler.cpp" />
+    <ClCompile Include="handlers\PODHandler.cpp" />
+    <ClCompile Include="handlers\ScreenshotHandler.cpp" />
+    <ClCompile Include="handlers\TestHooks.cpp" />
+    <ClCompile Include="handlers\TimeHandler.cpp" />
+    <ClCompile Include="thirdparty\libpng\example.c" />
+    <ClCompile Include="thirdparty\libpng\png.c" />
+    <ClCompile Include="thirdparty\libpng\pngerror.c" />
+    <ClCompile Include="thirdparty\libpng\pnggccrd.c" />
+    <ClCompile Include="thirdparty\libpng\pngget.c" />
+    <ClCompile Include="thirdparty\libpng\pngmem.c" />
+    <ClCompile Include="thirdparty\libpng\pngpread.c" />
+    <ClCompile Include="thirdparty\libpng\pngread.c" />
+    <ClCompile Include="thirdparty\libpng\pngrio.c" />
+    <ClCompile Include="thirdparty\libpng\pngrtran.c" />
+    <ClCompile Include="thirdparty\libpng\pngrutil.c" />
+    <ClCompile Include="thirdparty\libpng\pngset.c" />
+    <ClCompile Include="thirdparty\libpng\pngtest.c" />
+    <ClCompile Include="thirdparty\libpng\pngtrans.c" />
+    <ClCompile Include="thirdparty\libpng\pngvcrd.c" />
+    <ClCompile Include="thirdparty\libpng\pngwio.c" />
+    <ClCompile Include="thirdparty\libpng\pngwrite.c" />
+    <ClCompile Include="thirdparty\libpng\pngwtran.c" />
+    <ClCompile Include="thirdparty\libpng\pngwutil.c" />
+    <ClCompile Include="thirdparty\zlib\adler32.c" />
+    <ClCompile Include="thirdparty\zlib\compress.c" />
+    <ClCompile Include="thirdparty\zlib\crc32.c" />
+    <ClCompile Include="thirdparty\zlib\deflate.c" />
+    <ClCompile Include="thirdparty\zlib\gzclose.c" />
+    <ClCompile Include="thirdparty\zlib\gzlib.c" />
+    <ClCompile Include="thirdparty\zlib\gzread.c" />
+    <ClCompile Include="thirdparty\zlib\gzwrite.c" />
+    <ClCompile Include="thirdparty\zlib\infback.c" />
+    <ClCompile Include="thirdparty\zlib\inffast.c" />
+    <ClCompile Include="thirdparty\zlib\inflate.c" />
+    <ClCompile Include="thirdparty\zlib\inftrees.c" />
+    <ClCompile Include="thirdparty\zlib\trees.c" />
+    <ClCompile Include="thirdparty\zlib\uncompr.c" />
+    <ClCompile Include="thirdparty\zlib\zutil.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

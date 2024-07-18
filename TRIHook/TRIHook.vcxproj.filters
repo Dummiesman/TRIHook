@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\trihook">
+      <UniqueIdentifier>{1613c700-b7b2-4549-bcac-49e908de022a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thirdparty">
+      <UniqueIdentifier>{a920830b-ea12-491e-9283-d92b860fe306}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thirdparty\zlib">
+      <UniqueIdentifier>{f612c1ca-7885-4100-b9f7-613598a0ae88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thirdparty\libpng">
+      <UniqueIdentifier>{05472656-fd30-4042-ba89-c762a0de1adc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thirdparty\pngplusplus">
+      <UniqueIdentifier>{054b4ec7-5680-4595-af0d-0eabbd6f2411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\handlers">
+      <UniqueIdentifier>{44da192f-0390-47d1-9e14-e5195f66303b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{0df19aaf-8ec4-4a85-9af2-ede4509f5e5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\evo">
+      <UniqueIdentifier>{ae5d550a-d563-4c1b-8187-e05c6422df7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\evo\ui">
+      <UniqueIdentifier>{18e17116-9e80-470e-bb65-e3b617a8d830}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\framework">
+      <UniqueIdentifier>{3447355d-e55f-4dd8-9eb5-bec34631f3b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{dbb9028e-9794-4730-b7cb-2fd5f3c8761d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\pod">
+      <UniqueIdentifier>{57337513-9203-4009-b2fe-6dd3d50880ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\platform">
+      <UniqueIdentifier>{a5e366b0-7b54-4602-9637-350eaa235117}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\3d">
+      <UniqueIdentifier>{6829d867-360a-4212-b9df-cf7727a9fa35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\audio">
+      <UniqueIdentifier>{2e900b03-02e9-4e28-b846-4e9c9f6ad43a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\editorhools">
+      <UniqueIdentifier>{f1f330d1-3bbd-413b-9451-5eacd7be6814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\font">
+      <UniqueIdentifier>{d8fb17bf-252d-4fd0-891d-0c16fb185c02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\game">
+      <UniqueIdentifier>{f3d544b2-89f3-4c9e-b302-3d0976b2af52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\input">
+      <UniqueIdentifier>{d6e1d7de-2e1e-4049-8bd6-9ca7b2cbd428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\math">
+      <UniqueIdentifier>{f8fa28bd-97c9-470e-95de-e260a2756ebb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\engine\platform\windows">
+      <UniqueIdentifier>{b730483c-e366-4e6c-88e4-0991e0b2f4eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="argparse.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dllmain.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="trihook\trihook.h">
+      <Filter>Source Files\trihook</Filter>
+    </ClInclude>
+    <ClInclude Include="trihook\trihook_defs.h">
+      <Filter>Source Files\trihook</Filter>
+    </ClInclude>
+    <ClInclude Include="trihook\trihook_util.h">
+      <Filter>Source Files\trihook</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\inicpp.h">
+      <Filter>Source Files\thirdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\deflate.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\gzguts.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\inffast.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\inffixed.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\inflate.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\inftrees.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\trees.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\zconf.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\zlib.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\zutil.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\zlib\crc32.h">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\libpng\png.h">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\libpng\pngconf.h">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\consumer.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\convert_color_space.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\end_info.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\error.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\ga_pixel.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\generator.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\gray_pixel.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\image.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\image_info.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\index_pixel.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\info.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\info_base.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\io_base.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\packed_pixel.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\palette.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\pixel_buffer.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\pixel_traits.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\png.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\reader.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\require_color_space.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\rgb_pixel.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\rgba_pixel.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\solid_pixel_buffer.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\streaming_base.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\tRNS.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\types.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\writer.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\color.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="thirdparty\pngplusplus\config.hpp">
+      <Filter>Source Files\thirdparty\pngplusplus</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\EVOSoundHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\EVOWidescreenHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\FPSLimitHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\handlers.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\OutputHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\PODHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\ScreenshotHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\TestHooks.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\TimeHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\CallbacksHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\EVOConfigSkipHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\EVOInputPatchHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\EVOMasterServerHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="handlers\EVOMiscPatchHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="game\GameSettings.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\output.h">
+      <Filter>Source Files\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\common.h">
+      <Filter>Source Files\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\hook.h">
+      <Filter>Source Files\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\hook_framework.h">
+      <Filter>Source Files\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="framework\HookConfig.h">
+      <Filter>Source Files\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_game.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_gfx.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_input.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_math.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_memory.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_physics.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_platform_windows.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_pod.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_time.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_3d.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_audio.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_common.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_editortools.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\engine_font.h">
+      <Filter>Source Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\3d\C3DModel.h">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\3d\CMini3D.h">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\3d\CSimpleModel.h">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\3d\SMaterial.h">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\3d\3dstructs.h">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\editortools\CPickList.h">
+      <Filter>Source Files\engine\editorhools</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\editortools\CEditorTools.h">
+      <Filter>Source Files\engine\editorhools</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\font\CBitFont.h">
+      <Filter>Source Files\engine\font</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\font\CFont.h">
+      <Filter>Source Files\engine\font</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\game\Game.h">
+      <Filter>Source Files\engine\game</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\Keyboard.h">
+      <Filter>Source Files\engine\input</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\math\CVector.h">
+      <Filter>Source Files\engine\math</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\platform\windows\windproc.h">
+      <Filter>Source Files\engine\platform\windows</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\pod\CPod.h">
+      <Filter>Source Files\engine\pod</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\pod\CTruckPod.h">
+      <Filter>Source Files\engine\pod</Filter>
+    </ClInclude>
+    <ClInclude Include="EVOMemoryHandler.h">
+      <Filter>Source Files\handlers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="argparse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\gzclose.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\gzlib.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\gzread.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\gzwrite.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\infback.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\inffast.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\inflate.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\inftrees.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\trees.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\uncompr.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\zutil.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\adler32.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\compress.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\crc32.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\zlib\deflate.c">
+      <Filter>Source Files\thirdparty\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\png.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngerror.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pnggccrd.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngget.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngmem.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngpread.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngread.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngrio.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngrtran.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngrutil.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngset.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngtest.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngtrans.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngvcrd.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngwio.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngwrite.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngwtran.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\pngwutil.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="thirdparty\libpng\example.c">
+      <Filter>Source Files\thirdparty\libpng</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\EVOSoundHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\EVOWidescreenHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\FPSLimitHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\OutputHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\PODHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\ScreenshotHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\TestHooks.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\TimeHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\CallbacksHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\EVOConfigSkipHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\EVOInputPatchHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\EVOMasterServerHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="handlers\EVOMiscPatchHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="game\GameSettings.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\output.cpp">
+      <Filter>Source Files\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\hook.cpp">
+      <Filter>Source Files\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="framework\HookConfig.cpp">
+      <Filter>Source Files\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\engine_font.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\3d\C3DModel.cpp">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\3d\CMini3D.cpp">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\3d\CSimpleModel.cpp">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\3d\SMaterial.cpp">
+      <Filter>Source Files\engine\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\editortools\CPickList.cpp">
+      <Filter>Source Files\engine\editorhools</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\editortools\CEditorTools.cpp">
+      <Filter>Source Files\engine\editorhools</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\font\CBitFont.cpp">
+      <Filter>Source Files\engine\font</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\font\CFont.cpp">
+      <Filter>Source Files\engine\font</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\game\Game.cpp">
+      <Filter>Source Files\engine\game</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input\Keyboard.cpp">
+      <Filter>Source Files\engine\input</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\math\CVector.cpp">
+      <Filter>Source Files\engine\math</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\pod\CTruckPod.cpp">
+      <Filter>Source Files\engine\pod</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\pod\CPod.cpp">
+      <Filter>Source Files\engine\pod</Filter>
+    </ClCompile>
+    <ClCompile Include="EVOMemoryHandler.cpp">
+      <Filter>Source Files\handlers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
